@@ -4,16 +4,9 @@
   margin-block: 4rem;
 }
 
-iframe {
-  width: 100%;
-  margin-inline: auto;
-  margin-block: 2rem;
-  border: none;
-}
-
 .schedule-outer {
   display: grid;
-  /* padding-block-start: 1.5em; */
+  padding-block-start: 1.5em;
 
   h3 {
     border-block-start: black solid 0.1em;
@@ -27,7 +20,7 @@ iframe {
 .schedule-inline {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: 31%;
+  grid-auto-columns: 39%;
   overflow-x: auto;
   overscroll-behavior-inline: contain;
   gap: 2.5rem;
@@ -72,4 +65,12 @@ iframe {
 
 .seminar-workshop > p:first-child {
   color: #2f9176;
+}
+
+.days {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1.5em;
+margin-inline: auto;
+margin-block-start: 3.5rem;
 }
