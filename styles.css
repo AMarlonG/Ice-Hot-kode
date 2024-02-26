@@ -20,7 +20,7 @@
 .schedule-inline {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: 39%;
+  grid-auto-columns: minmax(min-content, 20rem);
   overflow-x: auto;
   overscroll-behavior-inline: contain;
   gap: 2.5rem;
@@ -40,7 +40,6 @@
 
 .schedule-item {
   display: grid;
-  grid-template-rows: min-content;
   gap: 0.5rem;
   align-content: start;
   border-inline-start: black solid 0.1em;
@@ -71,6 +70,15 @@
   display: grid;
   grid-auto-flow: column;
   gap: 1.5em;
-margin-inline: auto;
-margin-block-start: 3.5rem;
+  margin-inline: auto;
+  margin-block-start: 3.5rem;
+}
+
+.front-page-sections {
+  width: min(120ch, 100% - 4rem);
+  margin-inline: auto 0;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
 }
